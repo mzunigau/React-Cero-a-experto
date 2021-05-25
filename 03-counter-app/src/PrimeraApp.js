@@ -1,11 +1,14 @@
-import React from 'react';
-
+import React from "react";
+// import React, { Fragment } from "react";
 
 const PrimeraApp = () => {
+  const saludo = "Hola mundo";
+  return (
+    <>
+      <h1> {saludo} </h1>
+      <p>Mi primera aplicación</p>
+    </>
+  );
+};
 
-        return ( <h1> Hola mundo </h1>);
-
-        }
-
-
-        export default PrimeraApp;
+export default PrimeraApp;
