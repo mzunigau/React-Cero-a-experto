@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 // import React, { Fragment } from "react";
 
-const PrimeraApp = ({ saludo }) => {
+const PrimeraApp = ({ saludo, subtitulo }) => {
   //   const saludo = "Hola mundo";
   //   console.log(saludo);
 
@@ -13,13 +13,17 @@ const PrimeraApp = ({ saludo }) => {
   return (
     <>
       <h1> {saludo} </h1>
-      <p>Mi primera aplicación</p>
+      <p>{subtitulo}</p>
     </>
   );
 };
 
 PrimeraApp.protoTypes = {
   saludo: PropTypes.string.isRequired,
+};
+
+PrimeraApp.defaultProps = {
+  subtitulo: "Soy un subtitulo nuevo",
 };
 
 export default PrimeraApp;
