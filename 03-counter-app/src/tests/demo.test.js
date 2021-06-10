@@ -1,9 +1,16 @@
-test('deben de ser iguales los strings', () => {
+describe('Pruebas en el archivo demo.test.js', () => {
 
-    const isActive = true;
+    test('deben de ser iguales los strings', () => {
 
-    if (isActive) {
-        throw new Error('No esta activo');
-    }
+        //1. inicializacion
+        const mensaje = "Hola Mundo";
 
-})
+        //2. estimulo
+        const mensaje2 = `Hola Mundo`;
+
+        //3. ejecucion
+        expect(mensaje).toBe(mensaje2);
+
+    });
+
+});
